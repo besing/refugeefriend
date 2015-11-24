@@ -59,8 +59,23 @@ group :production do
 end
 
 
-gem 'pg'
+gem 'pg' # Postgres (Dev/Test/Prod)
 
+gem 'devise'
+gem 'carrierwave'
+gem 'friendly_id', '~> 5.0.0' # slugging and permalinks
+gem 'will_paginate', '~> 3.0.6'
+
+# gem 'public_activity' # actions performed by your users, like adding comments, responding etc
+# gem 'acts_as_votable', '~> 0.10.0' # allowing records to be votable (e.g. Likes)
+# gem 'acts_as_commentable'
+
+gem 'acts_as_follower' # allow any model to follow any other model
+gem 'counter_culture', '~> 0.1.33' # turbo-charged counter caches etc.
+
+gem 'faker'
+gem 'populator'
+gem 'auto_html' # transforms URIs and includes the destination resource (YT etc.)
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
