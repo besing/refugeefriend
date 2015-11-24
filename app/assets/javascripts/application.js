@@ -13,4 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
+// require bindWithDelay // jQuery Plugin For Delayed Event Execution
+// require jquery.datetimepicker
 //= require_tree .
